@@ -11,6 +11,10 @@ This is a community effort to keep the OpenSource [GPLv3](./LICENSE.md) BookedSc
 ## Installation instructions
 
 [Full install instructions](./doc/INSTALLATION.md)
+sudo docker container list
+sudo docker inspect "containerID" --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
+ - use that to edit config file for database ip
+
 
 ## Developer Documentation
 

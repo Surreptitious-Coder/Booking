@@ -1,0 +1,50 @@
+version: "3.1"
+services:
+    mysql:
+        build:
+            context: .
+            dockerfile: mysql.DockerFile
+        container_name: booked-database
+        restart: always
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_ROOT_USER: "root"
+            MYSQL_ROOT_PASSWORD: "Hi"
+            MYSQL_DATABASE: bookedscheduler
+            MYSQL_USER: "test"
+            MYSQL_PASSWORD: "Hi"
+            
+        expose:
+      # Opens port 3306 on the container
+            - '3306'
+
+            
+    phpmyadmin:
+       links:
+         - mysql:mysql
+       image: phpmyadmin/phpmyadmin
+       restart: always
+       ports:
+          - '8083:80'
+       environment:
+          MYSQL_USER: user
+          MYSQL_PASSWORD: test
+          MYSQL_ROOT_PASSWORD: Hi
+    
+
+    server:
+        build: .
+        image: booked-server:v1
+        container_name: booked-server
+        restart: always
+        depends_on:
+            - mysql
+        links:
+            - mysql:mysql
+        ports:
+            - "8080:80"
+        volumes:
+            - ./:/var/www/html
+
+

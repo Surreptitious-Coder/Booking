@@ -209,7 +209,47 @@ CREATE TABLE `resources` (
 	ON UPDATE CASCADE ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARACTER SET utf8;
 
+
 --
+-- Table structure for table `user_resource_permissions`
+--
+
+CREATE TABLE `modules` (
+ `module_id` smallint(5) unsigned NOT NULL auto_increment,
+ `name` varchar(85) NOT NULL,
+ `description` text,
+ `notes` text,
+ `min_duration` int,
+ `min_increment` int,
+ `max_duration` int,
+ `allow_multiday_reservations` tinyint(1) unsigned NOT NULL default '1',
+ `min_notice_time` int,
+ `max_notice_time` int,
+ `schedule_id` smallint(5) unsigned NOT NULL,
+ `CPU` int,
+ `spin_up_time` int,
+ `HDD` int,
+ `RAM` int,
+ PRIMARY KEY (`module_id`),
+ INDEX (`schedule_id`),
+ FOREIGN KEY (`schedule_id`)
+	REFERENCES `schedules`(`schedule_id`)
+	ON UPDATE CASCADE ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARACTER SET utf8;
+
+
+--
+-- Table structure for table `user_resource_permissions`
+--
+
+CREATE TABLE `server_resources` (
+ `resource_counter_id` smallint(5) unsigned NOT NULL auto_increment,
+ `MAX_CPU` int NOT NULL,
+ `MAX_HDD` int NOT NULL,
+ `MAX_RAM` int NOT NULL,
+ PRIMARY KEY (`resource_counter_id`)
+) ENGINE=InnoDB DEFAULT CHARACTER SET utf8;
+
 -- Table structure for table `user_resource_permissions`
 --
 

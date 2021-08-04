@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-02 12:42:58
+/* Smarty version 3.1.34-dev-7, created on 2021-08-04 16:29:40
   from '/var/www/html/tpl/globalfooter.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_6107e852decc04_96427511',
+  'unifunc' => 'content_610ac074dd3a45_42484386',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '57e0da8c984de55085280e6593c09d8704f457e4' => 
     array (
       0 => '/var/www/html/tpl/globalfooter.tpl',
-      1 => 1627552873,
+      1 => 1628094267,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6107e852decc04_96427511 (Smarty_Internal_Template $_smarty_tpl) {
+function content_610ac074dd3a45_42484386 (Smarty_Internal_Template $_smarty_tpl) {
 ?>	</div><!-- close main-->
 
 	<footer class="footer navbar">
 		<a href="<?php echo $_smarty_tpl->tpl_vars['CompanyUrl']->value;?>
 "><?php echo $_smarty_tpl->tpl_vars['CompanyName']->value;?>
-</a> <br/><a href="https://github.com/effgarces/BookedScheduler"><?php echo $_smarty_tpl->tpl_vars['AppTitle']->value;?>
- GPLv3 v<?php echo $_smarty_tpl->tpl_vars['Version']->value;?>
+</a> <br/><a href="https://github.com/effgarces/BookedScheduler">Created using the <?php echo $_smarty_tpl->tpl_vars['AppTitle']->value;?>
+ application GPLv3 v<?php echo $_smarty_tpl->tpl_vars['Version']->value;?>
 </a>
 
 	</footer>
@@ -41,23 +41,7 @@ function content_6107e852decc04_96427511 (Smarty_Internal_Template $_smarty_tpl)
 	<?php echo '</script'; ?>
 >
 
-	<?php if (!empty($_smarty_tpl->tpl_vars['GoogleAnalyticsTrackingId']->value)) {?>
-		
-			<?php echo '<script'; ?>
->
-			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		  
-			  ga('create', '<?php echo $_smarty_tpl->tpl_vars['GoogleAnalyticsTrackingId']->value;?>
-', 'auto');
-              ga('set', 'anonymizeIp', true);
-			  ga('send', 'pageview');
-			<?php echo '</script'; ?>
->
-	<?php }?>
-
+	
 	</body>
 </html>
 <?php }

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-02 12:43:11
+/* Smarty version 3.1.34-dev-7, created on 2021-08-04 16:29:56
   from '/var/www/html/tpl/Dashboard/admin_upcoming_reservations.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_6107e85faa09b7_40805178',
+  'unifunc' => 'content_610ac0848e5e74_36681602',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Dashboard/dashboard_reservation.tpl' => 4,
   ),
 ),false)) {
-function content_6107e85faa09b7_40805178 (Smarty_Internal_Template $_smarty_tpl) {
+function content_610ac0848e5e74_36681602 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="dashboard upcomingReservationsDashboard" id="adminUpcomingReservationsDashboard">
     <div class="dashboardHeader">
         <div class="pull-left"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"AllUpcomingReservations"),$_smarty_tpl ) );?>

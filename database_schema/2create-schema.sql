@@ -209,7 +209,47 @@ CREATE TABLE `resources` (
 	ON UPDATE CASCADE ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARACTER SET utf8;
 
+
 --
+-- Table structure for table `user_resource_permissions`
+--
+
+CREATE TABLE `modules` (
+ `module_id` smallint(5) unsigned NOT NULL auto_increment,
+ `name` varchar(85) NOT NULL,
+ `description` text,
+ `notes` text,
+ `min_duration` int,
+ `min_increment` int,
+ `max_duration` int,
+ `allow_multiday_reservations` tinyint(1) unsigned NOT NULL default '1',
+ `min_notice_time` int,
+ `max_notice_time` int,
+ `schedule_id` smallint(5) unsigned NOT NULL,
+ `CPU` int,
+ `spin_up_time` int,
+ `HDD` int,
+ `RAM` int,
+ PRIMARY KEY (`module_id`),
+ INDEX (`schedule_id`),
+ FOREIGN KEY (`schedule_id`)
+	REFERENCES `schedules`(`schedule_id`)
+	ON UPDATE CASCADE ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARACTER SET utf8;
+
+
+--
+-- Table structure for table `user_resource_permissions`
+--
+
+CREATE TABLE `server_resources` (
+ `resource_counter_id` smallint(5) unsigned NOT NULL auto_increment,
+ `MAX_CPU` int NOT NULL,
+ `MAX_HDD` int NOT NULL,
+ `MAX_RAM` int NOT NULL,
+ PRIMARY KEY (`resource_counter_id`)
+) ENGINE=InnoDB DEFAULT CHARACTER SET utf8;
+
 -- Table structure for table `user_resource_permissions`
 --
 
@@ -307,6 +347,10 @@ CREATE TABLE  `reservation_instances` (
   `end_date` datetime NOT NULL,
   `reference_number` varchar(50) NOT NULL,
   `series_id` int unsigned NOT NULL,
+  `CPU` int,
+  `spin_up_time` int,
+  `HDD` int,
+  `RAM` int,
   PRIMARY KEY  (`reservation_instance_id`),
   KEY `start_date` (`start_date`),
   KEY `end_date` (`end_date`),
@@ -462,7 +506,7 @@ CREATE TABLE `reservation_accessories` (
 	ON UPDATE CASCADE ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARACTER SET utf8;
 
-SET foreign_key_checks = 1;
+
 
 
 
@@ -488,6 +532,7 @@ ALTER TABLE `users` ADD COLUMN `allow_calendar_subscription` TINYINT(1) NOT NULL
 ALTER TABLE `resources` ADD COLUMN `allow_calendar_subscription` TINYINT(1) NOT NULL DEFAULT 0;
 ALTER TABLE `schedules` ADD COLUMN `allow_calendar_subscription` TINYINT(1) NOT NULL DEFAULT 0;
 
+SET foreign_key_checks = 1;
 SET foreign_key_checks = 0;
 
 DROP TABLE IF EXISTS `dbversion`;

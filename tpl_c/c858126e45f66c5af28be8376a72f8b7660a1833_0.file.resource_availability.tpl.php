@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-02 12:43:11
+/* Smarty version 3.1.34-dev-7, created on 2021-08-06 02:05:49
   from '/var/www/html/tpl/Dashboard/resource_availability.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_6107e85fa7c249_41154158',
+  'unifunc' => 'content_610c98fd145a81_35817402',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c858126e45f66c5af28be8376a72f8b7660a1833' => 
     array (
       0 => '/var/www/html/tpl/Dashboard/resource_availability.tpl',
-      1 => 1627552873,
+      1 => 1628215355,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6107e85fa7c249_41154158 (Smarty_Internal_Template $_smarty_tpl) {
+function content_610c98fd145a81_35817402 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="dashboard dashboard availabilityDashboard" id="availabilityDashboard">
     <div class="dashboardHeader">
         <div class="pull-left"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"ResourceAvailability"),$_smarty_tpl ) );?>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-02 12:47:54
+/* Smarty version 3.1.34-dev-7, created on 2021-08-06 02:05:55
   from '/var/www/html/tpl/SearchAvailability/search-availability-results.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_6107e97aa43318_32182050',
+  'unifunc' => 'content_610c99033706a7_37352185',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e28e23546fa50178f45968aa4cceef91ee5d8850' => 
     array (
       0 => '/var/www/html/tpl/SearchAvailability/search-availability-results.tpl',
-      1 => 1627552873,
+      1 => 1628215355,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6107e97aa43318_32182050 (Smarty_Internal_Template $_smarty_tpl) {
+function content_610c99033706a7_37352185 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['Openings']->value, 'opening');
 $_smarty_tpl->tpl_vars['opening']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['opening']->value) {

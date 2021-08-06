@@ -19,20 +19,6 @@ services:
       # Opens port 3306 on the container
             - '3306'
 
-            
-    phpmyadmin:
-       links:
-         - mysql:mysql
-       image: phpmyadmin/phpmyadmin
-       restart: always
-       ports:
-          - '8083:80'
-       environment:
-          MYSQL_USER: user
-          MYSQL_PASSWORD: test
-          MYSQL_ROOT_PASSWORD: Hi
-    
-
     server:
         build: .
         image: booked-server:v1

@@ -36,5 +36,6 @@ insert into `roles` values (3, 'Resource Admin', 3);
 
 insert into `roles` values (4, 'Schedule Admin', 4);
 
+
 insert into `payment_configuration` (`credit_cost`, `credit_currency`) values(0, 'USD');
 

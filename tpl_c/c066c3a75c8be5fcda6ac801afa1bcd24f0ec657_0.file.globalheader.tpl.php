@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-02 12:43:03
+/* Smarty version 3.1.34-dev-7, created on 2021-08-06 02:05:44
   from '/var/www/html/tpl/globalheader.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_6107e857ca7453_12788486',
+  'unifunc' => 'content_610c98f894d395_50169076',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c066c3a75c8be5fcda6ac801afa1bcd24f0ec657' => 
     array (
       0 => '/var/www/html/tpl/globalheader.tpl',
-      1 => 1627552873,
+      1 => 1628215355,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6107e857ca7453_12788486 (Smarty_Internal_Template $_smarty_tpl) {
+function content_610c98f894d395_50169076 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="<?php echo $_smarty_tpl->tpl_vars['HtmlLang']->value;?>
 " dir="<?php echo $_smarty_tpl->tpl_vars['HtmlTextDirection']->value;?>
@@ -264,11 +264,7 @@ echo Pages::CREDITS;?>
  <b
                                         class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li id="navBookings"><a href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;
-echo Pages::SCHEDULE;?>
-"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"Bookings"),$_smarty_tpl ) );?>
-</a>
-                                </li>
+                                
                                 <li id="navMyCalendar"><a
                                             href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;
 echo Pages::MY_CALENDAR;?>
@@ -515,13 +511,7 @@ admin/server_settings.php"><?php echo call_user_func_array( $_smarty_tpl->smarty
 admin/data_cleanup.php"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"DataCleanup"),$_smarty_tpl ) );?>
 </a>
                                 </li>
-                                <?php if ($_smarty_tpl->tpl_vars['ShowNewVersion']->value) {?>
-                                    <li class="divider new-version"></li>
-                                    <li id="navNewVersion" class="new-version">
-                                        <a href="https://www.bookedscheduler.com/whatsnew"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>'WhatsNew'),$_smarty_tpl ) );?>
-</a>
-                                    </li>
-                                <?php }?>
+                                
                             </ul>
                         </li>
                     <?php }?>
@@ -530,12 +520,7 @@ admin/data_cleanup.php"><?php echo call_user_func_array( $_smarty_tpl->smarty->r
  <b
                                     class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li id="navHelp"><a href="https://www.bookedscheduler.com/help/usage"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>'Help'),$_smarty_tpl ) );?>
-</a></li>
-                            <?php if ($_smarty_tpl->tpl_vars['CanViewAdmin']->value) {?>
-                                <li id="navHelpAdmin"><a href="https://www.bookedscheduler.com/help/administration"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>'Administration'),$_smarty_tpl ) );?>
-</a></li>
-                            <?php }?>
+                            
                             <li id="navAbout"><a href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
 help.php?ht=about"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>'About'),$_smarty_tpl ) );?>
 </a></li>

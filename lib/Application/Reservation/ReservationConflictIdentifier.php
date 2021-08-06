@@ -124,9 +124,9 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 
 	function GetConflict($IP,$instance){
 		error_reporting(E_ERROR);
-		$link = mysqli_connect("192.168.48.2", $user="root", $password="Hi");
+		$link = mysqli_connect($IP, $user="root", $password="Hi");
 	
-		$instance = ["id"=>1,"start_date"=>'2021-08-06 12:00:00',"end_date"=> '2021-08-06 13:00:00',"ref"=> '610c5dd321baa684688475',"id2"=>1,"CPU"=>4,"spin"=>50,"HDD"=>100,"RAM"=>100];
+		#$instance = ["id"=>1,"start_date"=>'2021-08-06 12:00:00',"end_date"=> #'2021-08-06 13:00:00',"ref"=> #'610c5dd321baa684688475',"id2"=>1,"CPU"=>4,"spin"=>50,"HDD"=>100,"RAM"=>100];
 		$relevant = ["CPU"=>0,"RAM"=>0,"HDD"=>0];
 	
 	

@@ -3,4 +3,4 @@ sudo systemctl stop mysql
 sudo chmod +777 -R *
 sudo docker-compose down
 sudo docker-compose build
-sudo docker-compose up
+sudo docker-compose up & sudo ./update_server_ip

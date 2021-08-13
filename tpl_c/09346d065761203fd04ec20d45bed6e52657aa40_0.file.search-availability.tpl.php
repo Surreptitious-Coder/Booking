@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-06 02:05:53
+/* Smarty version 3.1.34-dev-7, created on 2021-08-13 00:35:23
   from '/var/www/html/tpl/SearchAvailability/search-availability.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_610c99015bfe00_28846347',
+  'unifunc' => 'content_6115be4b6064f0_05098089',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:globalfooter.tpl' => 1,
   ),
 ),false)) {
-function content_610c99015bfe00_28846347 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6115be4b6064f0_05098089 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:globalheader.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('Select2'=>true,'Owl'=>true,'Timepicker'=>true), 0, false);
 ?>
 

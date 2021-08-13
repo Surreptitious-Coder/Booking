@@ -144,6 +144,7 @@ class ReservationSavePresenter implements IReservationSavePresenter
 
 		$reservationSeries->AcceptTerms($this->page->GetTermsOfServiceAcknowledgement());
 
+		var_dump("reaches line 147");
 		return $reservationSeries;
 	}
 
@@ -156,6 +157,8 @@ class ReservationSavePresenter implements IReservationSavePresenter
 		$successfullySaved = $this->handler->Handle(
 					$reservationSeries,
 					$this->page);
+					
+		
 
 
 		if ($successfullySaved)
@@ -174,8 +177,11 @@ class ReservationSavePresenter implements IReservationSavePresenter
 		$startTime = $this->page->GetStartTime();
 		$endDate = $this->page->GetEndDate();
 		$endTime = $this->page->GetEndTime();
+		var_dump($startTime, $startDate);
+		var_dump($endTime, $endDate);
 
 		$timezone = $this->userSession->Timezone;
+		var_dump($timezone);
 		return DateRange::Create($startDate . ' ' . $startTime, $endDate . ' ' . $endTime, $timezone);
 	}
 }

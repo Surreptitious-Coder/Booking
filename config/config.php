@@ -8,7 +8,7 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
  * Application configuration
  */
 $conf['settings']['app.title'] = 'Booked Scheduler';			// application title
-$conf['settings']['default.timezone'] = 'Etc/UTC';              // look up here http://php.net/manual/en/timezones.php
+$conf['settings']['default.timezone'] = 'Europe/London';              // look up here http://php.net/manual/en/timezones.php
 $conf['settings']['allow.self.registration'] = 'true';         	// if users can register themselves
 $conf['settings']['admin.email'] = 'admin@example.com';         // email address of admin user
 $conf['settings']['admin.email.name'] = 'Booked Administrator';	// name to be used in From: field when sending automatic emails
@@ -16,7 +16,7 @@ $conf['settings']['company.name'] = '';                         // name of compa
 $conf['settings']['company.url'] = '';                          // URL of company, if applicable
 $conf['settings']['default.page.size'] = '50';                  // number of records per page
 $conf['settings']['enable.email'] = 'true';                     // global configuration to enable if any emails will be sent
-$conf['settings']['default.language'] = 'en_us';                // find your language in the lang directory
+$conf['settings']['default.language'] = 'en_gb';                // find your language in the lang directory
 $conf['settings']['script.url'] = $_SERVER['SERVER_NAME'] . str_replace('/index.php', '', $_SERVER['PHP_SELF']) . '/Web';   	                    // public URL to the Web directory of this instance. this is the URL that appears when you are logging in. leave http: or https: off to auto-detect
 $conf['settings']['image.upload.directory'] = 'Web/uploads/images'; // full or relative path to where images will be stored
 $conf['settings']['image.upload.url'] = 'uploads/images';       // full or relative path to show uploaded images from
@@ -57,7 +57,7 @@ $conf['settings']['privacy']['allow.guest.reservations'] = 'false';			// if rese
 /**
  * Reservation specific configuration
  */
-$conf['settings']['reservation']['start.time.constraint'] = 'future';		// when reservations can be created or edited. options are future, current, none
+$conf['settings']['reservation']['start.time.constraint'] = 'current';		// when reservations can be created or edited. options are future, current, none
 $conf['settings']['reservation']['updates.require.approval'] = 'false';		// if updates to previously approved reservations require approval again
 $conf['settings']['reservation']['prevent.participation'] = 'false';		// if participation and invitation options should be removed
 $conf['settings']['reservation']['prevent.recurrence'] = 'false';			// if recurring reservations are disabled for non-administrators
@@ -96,7 +96,7 @@ $conf['settings']['uploads']['reservation.attachment.extensions'] = 'txt,jpg,gif
 $conf['settings']['database']['type'] = 'mysql';
 $conf['settings']['database']['user'] = 'booked_user';        // database user with permission to the booked database
 $conf['settings']['database']['password'] = 'Hi';
-$conf['settings']['database']['hostspec'] = '192.168.64.2';        // ip, dns or named pipe
+$conf['settings']['database']['hostspec'] = '192.168.32.2';        // ip, dns or named pipe
 $conf['settings']['database']['name'] = 'bookedscheduler';
 /**
  * Mail server configuration

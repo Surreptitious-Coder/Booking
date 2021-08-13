@@ -19,21 +19,22 @@ insert into `group_roles` values (2, 2);
 insert into `group_roles` values (4, 4);
 
 insert into `users` (`fname`, `lname`, `email`, `username`, `password`, `salt`, `timezone`, `lastlogin`, `status_id`, `date_created`, `language`, `organization`)
-values ('User', 'User', 'user@example.com', 'user', '7b6aec38ff9b7650d64d0374194307bdde711425', '3b3dbb9b', 'America/New_York', '2008-09-16 01:59:00', 1, now(), 'en_us', 'XYZ Org Inc.'),
-       ('Admin', 'Admin', 'admin@example.com', 'admin', '70f3e748c6801656e4aae9dca6ee98ab137d952c', '4a04db87', 'America/New_York', '2010-03-26 12:44:00', 1, now(), 'en_us', 'ABC Org Inc.');
+values ('User', 'User', 'user@example.com', 'user', '7b6aec38ff9b7650d64d0374194307bdde711425', '3b3dbb9b', 'Europe/London', '2008-09-16 01:59:00', 1, now(), 'en_us', 'XYZ Org Inc.'),
+       ('Admin', 'Admin', 'admin@example.com', 'admin', '70f3e748c6801656e4aae9dca6ee98ab137d952c', '4a04db87', 'Europe/London', '2010-03-26 12:44:00', 1, now(), 'en_us', 'ABC Org Inc.');
 
 insert into `user_groups` values (2,2);
 
-insert into `resources` (`resource_id`, `name`, `location`, `contact_info`, `description`, `notes`, `min_duration`, `min_increment`, `max_duration`, `unit_cost`, `autoassign`, `requires_approval`, `allow_multiday_reservations`, `max_participants`, `min_notice_time_add`, `max_notice_time`, `image_name`, `legacyid`, `schedule_id`) VALUES
-  (1, 'Conference Room 1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, 2, NULL, 'resource1.jpg', NULL, 1),
-  (2, 'Conference Room 2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, 1, NULL, 'resource2.jpg', NULL, 1);
-  
+insert into `resources` (`resource_id`, `name`, `location`, `contact_info`, `description`, `notes`, `min_duration`, `min_increment`, `max_duration`, `unit_cost`, `autoassign`, `requires_approval`, `allow_multiday_reservations`, `max_participants`, `min_notice_time_add`, `max_notice_time`, `image_name`, `legacyid`, `schedule_id`,`RAM`,`HDD`,`spin_up_time`,`CPU`) VALUES
+  (1, 'Mint', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, 0, NULL, 'resource1.jpg', NULL, 1,1000,100,50,2),
+  (2, 'Arch', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, 0, NULL, 'resource2.jpg', NULL, 1,1000,100,50,2);
+
+
 insert into `modules` (`module_id`,`name`,`description`,`notes`,`min_duration`,`min_increment`,`max_duration`,`allow_multiday_reservations`,`min_notice_time`,`max_notice_time`,`schedule_id`,`CPU`,`spin_up_time`,`HDD`,`RAM`) VALUES
                        (1, 'Mint', NULL, NULL, NULL, NULL, NULL, 1, 1, NULL, 1, 2, 50, 30, 512);
 
 insert into `server_resources` (`resource_counter_id`,`MAX_CPU`,`MAX_HDD`,`MAX_RAM`) values (1,4,100,1000);
 
-insert into `reservation_instances`(`reservation_instance_id`,`start_date`,`end_date`,`reference_number`,`series_id`,`CPU`,`spin_up_time`,`HDD`,`RAM`) values(1,'2021-08-06 12:30:00', '2021-08-06 13:00:00', '610c5dd321baa684688475',1,4,50,100,100);
+insert into `reservation_instances`(`reservation_instance_id`,`start_date`,`end_date`,`reference_number`,`series_id`,`resource_id`) values(1,'2021-08-06 12:30:00', '2021-08-06 13:00:00', '610c5dd321baa684688475',1,1);
  
 insert into `accessories` (`accessory_id`, `accessory_name`, `accessory_quantity`) values
   (1, 'accessory limited to 10', 10),

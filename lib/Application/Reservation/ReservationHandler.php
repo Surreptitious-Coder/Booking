@@ -101,6 +101,7 @@ class ReservationHandler implements IReservationHandler
 			} catch (Exception $ex)
 			{
 				Log::Error('Error saving reservation: %s', $ex);
+				var_dump($ex);
 				throw($ex);
 			}
 

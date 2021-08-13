@@ -351,15 +351,12 @@ CREATE TABLE  `reservation_instances` (
   `end_date` datetime NOT NULL,
   `reference_number` varchar(50) NOT NULL,
   `series_id` int unsigned NOT NULL,
-  `resource_id` smallint(5) unsigned NOT NULL,
   PRIMARY KEY  (`reservation_instance_id`),
   KEY `start_date` (`start_date`),
   KEY `end_date` (`end_date`),
   KEY `reference_number` (`reference_number`),
   KEY `series_id` (`series_id`),
-  KEY `resource_id` (`resource_id`),
-  CONSTRAINT `reservations_series` FOREIGN KEY (`series_id`) REFERENCES `reservation_series` (`series_id`) ON DELETE CASCADE,
-  FOREIGN KEY (`resource_id`) REFERENCES `resources` (`resource_id`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `reservations_series` FOREIGN KEY (`series_id`) REFERENCES `reservation_series` (`series_id`) ON DELETE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 --

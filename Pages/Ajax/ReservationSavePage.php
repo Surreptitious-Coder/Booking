@@ -163,9 +163,9 @@ class ReservationSavePage extends SecurePage implements IReservationSavePage
 		{
 			$this->EnforceCSRFCheck();
 			$reservation = $this->_presenter->BuildReservation();
-			var_dump($this->_reservationSavedSuccessfully);
+			
 			$this->_presenter->HandleReservation($reservation);
-			var_dump($this->_reservationSavedSuccessfully);
+			
 
 			if ($this->_reservationSavedSuccessfully)
 			{

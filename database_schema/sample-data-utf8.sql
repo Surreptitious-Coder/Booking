@@ -34,8 +34,6 @@ insert into `modules` (`module_id`,`name`,`description`,`notes`,`min_duration`,`
 
 insert into `server_resources` (`resource_counter_id`,`MAX_CPU`,`MAX_HDD`,`MAX_RAM`) values (1,4,100,1000);
 
-insert into `reservation_instances`(`reservation_instance_id`,`start_date`,`end_date`,`reference_number`,`series_id`,`resource_id`) values(1,'2021-08-06 12:30:00', '2021-08-06 13:00:00', '610c5dd321baa684688475',1,1);
- 
 insert into `accessories` (`accessory_id`, `accessory_name`, `accessory_quantity`) values
   (1, 'accessory limited to 10', 10),
   (2, 'accessory limited to 2', 2),

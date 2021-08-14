@@ -60,7 +60,7 @@ class ReservationSeries
 	/**
 	 * @var BookableResource
 	 */
-	protected $_resource;
+	public $_resource;
 
 	/**
 	 * @return int

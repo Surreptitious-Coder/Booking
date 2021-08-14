@@ -127,7 +127,7 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 	{
 		error_reporting(E_ERROR);
 		
-		$link = mysqli_connect("192.168.208.2", $user="root", $password="Hi");
+		$link = mysqli_connect("192.168.224.2", $user="root", $password="Hi");
 	
 		#$instance = ["id"=>1,"start_date"=>'2021-08-06 12:00:00',"end_date"=> '2021-08-06 12:40:01',"ref"=> '610c5dd321baa684688475',"series_id"=>1,"CPU"=>4,"spin"=>50,"HDD"=>200,"RAM"=>1000];
 		$relevant = ["CPU"=>0,"RAM"=>0,"HDD"=>0];
@@ -152,23 +152,11 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 		#var_dump($reservation_instances);
 	
 	///////////////////////////////////////////////////////////////////////////////////////////
+		#var_dump($series);
+		$series_id = $series->resourceID();
+		#var_dump($series_id);
 		
-		$series = $instance->ReservationID();
-		var_dump($instance);
-		$reservation_intermediate = "SELECT resource_id FROM bookedscheduler.reservation_resources where series_id='$series'";
-		$server_resource = mysqli_query($link, $reservation_intermediate);
-	
-	
-		$instance_rows = [];
-		while ($result = $server_resource->fetch_assoc()) {
-			$instance_rows[] = $result;
-		}
-	
-		var_dump($instance_rows);
-	
-		$resource_id = $instance_rows[0]['resource_id']; //dies here
-		var_dump($resource_id);
-		$reservation_module = "SELECT * FROM bookedscheduler.resources where resource_id='$resource_id'";
+		$reservation_module = "SELECT * FROM bookedscheduler.resources where resource_id='$series_id'";
 		$server_resource = mysqli_query($link, $reservation_module);
 	
 	
@@ -178,18 +166,30 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 		}
 	
 	/////////////////////////////////////////////////////////////////////////////////////////
-		var_dump("instance rows",$instance_rows);
+		#$item = ($instance->endDate());
+		#vsubstr($item.'timestring',0,19));
 	
 	
 		//if instance between result.start_time and result.end_time or result between instance.start_time and instance.end_time
 		foreach ($reservation_instances as $item) {
-			if (((strtotime($instance['start_date']) >= strtotime($item['start_date'])) && ($instance['start_date']) < strtotime($item['end_date'])) ||  ($instance['end_date']) >= strtotime($item['start_date']) && (strtotime($instance['end_date']) < strtotime($item['end_date']))
-		|| ((strtotime($item['start_date']) >= strtotime($instance['start_date']) && strtotime($item['start_date']) < strtotime($instance['end_date']))   || (strtotime($item['end_date']) >= strtotime($instance['start_date'])) && (strtotime($item['end_date']) < strtotime($instance['end_date'])))) {
+			$start = ($instance->startDate());
+			$start = (substr($start.'timestring',0,19));
+
+			$end = ($instance->endDate());
+			$end = (substr($end.'timestring',0,19));
+
+			#var_dump($item['start_date']);
+			#var_dump($item['end_date']);
+		
+			if (((strtotime($start) >= strtotime($item['start_date'])) && strtotime($start) < strtotime($item['end_date'])) ||  strtotime($end) >= strtotime($item['start_date']) && (strtotime($end) < strtotime($item['end_date']))
+		|| ((strtotime($item['start_date']) >= strtotime($start) && strtotime($item['start_date']) < strtotime($end))   || (strtotime($item['end_date']) >= strtotime($start)) && (strtotime($item['end_date']) < strtotime($end)))) {
 	
+			#var_dump($item['start_date']);
+			#var_dump($item['end_date']);
 	
 			$series_id = $item['series_id'];
 			$item_intermediate = "SELECT resource_id FROM bookedscheduler.reservation_resources where series_id='$series_id'";
-			$item_resource = mysqli_query($link, $reservation_intermediate);
+			$item_resource = mysqli_query($link, $item_intermediate);
 	
 	
 			$item_rows = [];
@@ -210,13 +210,14 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 				$relevant['CPU'] += $server_rows2[0]['CPU'];
 				$relevant['RAM'] += $server_rows2[0]['RAM'];
 				$relevant['HDD'] += $server_rows2[0]['HDD'];
-				printf("\n Collision \n");
+
+				
 			}
 		}
 	
-		var_dump($relevant['CPU']);
-		var_dump($instance_rows[0]['CPU']);
-		var_dump($server_resources);
+		#var_dump($relevant);
+		#var_dump($instance_rows);
+		#var_dump($server_resources);
 	
 		if (($relevant['HDD']+$instance_rows[0]['HDD']<= $server_resources[0]['MAX_HDD']) && ($relevant['RAM']+$instance_rows[0]['RAM']<= $server_resources[0]['MAX_RAM']) && ($relevant['CPU']+$instance_rows[0]['CPU']<= $server_resources[0]['MAX_CPU'])) {
 			return false;

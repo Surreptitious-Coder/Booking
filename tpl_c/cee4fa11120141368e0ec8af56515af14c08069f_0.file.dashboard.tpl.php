@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-13 15:44:29
+/* Smarty version 3.1.34-dev-7, created on 2021-08-13 23:58:07
   from '/var/www/html/tpl/dashboard.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_6116935d863237_10604005',
+  'unifunc' => 'content_6117070fcdb9e0_98967448',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:globalfooter.tpl' => 1,
   ),
 ),false)) {
-function content_6116935d863237_10604005 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6117070fcdb9e0_98967448 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 $_smarty_tpl->_subTemplateRender('file:globalheader.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('Qtip'=>true,'Owl'=>true), 0, false);
@@ -78,7 +78,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     <div id="creatingNotification">
         <h3>
             <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2886669826116935d860a39_71030146', "ajaxMessage");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8834453426117070fcd90e8_81169010', "ajaxMessage");
 ?>
 
         </h3>
@@ -91,12 +91,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2886669826116935d8
 <?php $_smarty_tpl->_subTemplateRender('file:globalfooter.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }
 /* {block "ajaxMessage"} */
-class Block_2886669826116935d860a39_71030146 extends Smarty_Internal_Block
+class Block_8834453426117070fcd90e8_81169010 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'ajaxMessage' => 
   array (
-    0 => 'Block_2886669826116935d860a39_71030146',
+    0 => 'Block_8834453426117070fcd90e8_81169010',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

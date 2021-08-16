@@ -72,6 +72,7 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 		}
 
 		/** @var Reservation $reservation */
+		#var_dump($reservations);
 		foreach ($reservations as $reservation)
 		{
 			$instanceConflicts = array();
@@ -86,16 +87,18 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 				$endDate = $endDate->AddInterval($bufferTime);
 			}
 
-			$existingItems = $this->strategy->GetItemsBetween($startDate, $endDate, array_keys($keyedResources));
+			$existingItems = $this->strategy->GetItemsBetween($startDate, $endDate, null);
 
 			/** @var IReservedItemView $existingItem */
 			foreach ($existingItems as $existingItem)
 			{
 				if (
+						
 						($bufferTime == null || $reservationSeries->BookedBy()->IsAdmin) &&
 						($existingItem->GetStartDate()->Equals($reservation->EndDate()) || $existingItem->GetEndDate()->Equals($reservation->StartDate()))
 				)
 				{
+					#var_dump("heyo");
 					continue;
 				}
 
@@ -123,11 +126,12 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 	}
 
 	
-	protected function IsInConflict(Reservation $instance, ReservationSeries $series, IReservedItemView $existingItem, $keyedResources)
+	protected function IsInConflict(Reservation $instance, ReservationSeries $series, IReservedItemView $existingItem=null, $keyedResources=null)
 	{
 		error_reporting(E_ERROR);
+		#var_dump("IsInConflict");
 		
-		$link = mysqli_connect("192.168.224.2", $user="root", $password="Hi");
+		$link = mysqli_connect("172.27.0.2", $user="root", $password="Hi");
 	
 		#$instance = ["id"=>1,"start_date"=>'2021-08-06 12:00:00',"end_date"=> '2021-08-06 12:40:01',"ref"=> '610c5dd321baa684688475',"series_id"=>1,"CPU"=>4,"spin"=>50,"HDD"=>200,"RAM"=>1000];
 		$relevant = ["CPU"=>0,"RAM"=>0,"HDD"=>0];
@@ -188,6 +192,7 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 			#var_dump($item['end_date']);
 	
 			$series_id = $item['series_id'];
+			
 			$item_intermediate = "SELECT resource_id FROM bookedscheduler.reservation_resources where series_id='$series_id'";
 			$item_resource = mysqli_query($link, $item_intermediate);
 	
@@ -200,12 +205,15 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 			$resource_id = $item_rows[0]['resource_id'];
 			$item_module = "SELECT * FROM bookedscheduler.resources where resource_id='$resource_id'";
 			$item_resource = mysqli_query($link, $item_module);
+
+			
 	
 	
 			$server_rows2 = [];
 			while ($result = $item_resource->fetch_assoc()) {
 				$server_rows2[] = $result;
 			}
+			#var_dump($server_rows2[0]['name']);
 	
 				$relevant['CPU'] += $server_rows2[0]['CPU'];
 				$relevant['RAM'] += $server_rows2[0]['RAM'];
@@ -215,9 +223,10 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 			}
 		}
 	
-		#var_dump($relevant);
+		var_dump($relevant);
 		#var_dump($instance_rows);
 		#var_dump($server_resources);
+		#var_dump(debug_backtrace());
 	
 		if (($relevant['HDD']+$instance_rows[0]['HDD']<= $server_resources[0]['MAX_HDD']) && ($relevant['RAM']+$instance_rows[0]['RAM']<= $server_resources[0]['MAX_RAM']) && ($relevant['CPU']+$instance_rows[0]['CPU']<= $server_resources[0]['MAX_CPU'])) {
 			return false;

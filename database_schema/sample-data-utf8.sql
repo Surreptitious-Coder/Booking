@@ -32,7 +32,7 @@ insert into `resources` (`resource_id`, `name`, `location`, `contact_info`, `des
 insert into `modules` (`module_id`,`name`,`description`,`notes`,`min_duration`,`min_increment`,`max_duration`,`allow_multiday_reservations`,`min_notice_time`,`max_notice_time`,`schedule_id`,`CPU`,`spin_up_time`,`HDD`,`RAM`) VALUES
                        (1, 'Mint', NULL, NULL, NULL, NULL, NULL, 1, 1, NULL, 1, 2, 50, 30, 512);
 
-insert into `server_resources` (`resource_counter_id`,`MAX_CPU`,`MAX_HDD`,`MAX_RAM`) values (1,4,100,1000);
+insert into `server_resources` (`resource_counter_id`,`MAX_CPU`,`MAX_HDD`,`MAX_RAM`) values (1,4,200,2000);
 
 insert into `accessories` (`accessory_id`, `accessory_name`, `accessory_quantity`) values
   (1, 'accessory limited to 10', 10),

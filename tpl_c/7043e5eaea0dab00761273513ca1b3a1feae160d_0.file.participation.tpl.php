@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-13 23:58:19
+/* Smarty version 3.1.34-dev-7, created on 2021-08-16 10:51:53
   from '/var/www/html/tpl/Reservation/participation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_6117071b4c5405_67963435',
+  'unifunc' => 'content_611a4349c282e1_57928475',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6117071b4c5405_67963435 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611a4349c282e1_57928475 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="reservationParticipation">
 	<div class="row">
 		<label for="participantAutocomplete"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"ParticipantList"),$_smarty_tpl ) );?>

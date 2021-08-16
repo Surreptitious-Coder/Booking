@@ -24,6 +24,7 @@ class ResourceAvailabilityRule implements IReservationValidationRule
 	public function Validate($reservationSeries, $retryParameters = null)
 	{
 		$conflicts = $this->conflictIdentifier->GetConflicts($reservationSeries);
+		#var_dump($conflicts);
 		$shouldSkipConflicts = ReservationRetryParameter::GetValue(ReservationRetryParameter::$SKIP_CONFLICTS, $retryParameters,
 																   new BooleanConverter()) == true;
 
@@ -72,6 +73,7 @@ class ResourceAvailabilityRule implements IReservationValidationRule
 	 */
 	protected function IsInConflict(Reservation $instance, ReservationSeries $series, IReservedItemView $existingItem, $keyedResources)
 	{
+		var_dump("HI");
 		if (array_key_exists($existingItem->GetResourceId(), $keyedResources))
 		{
 			return $existingItem->BufferedTimes()->Overlaps($instance->Duration());

@@ -62,7 +62,9 @@ class UnavailableResourcesPresenter
             if (!$existingSeries) {
                 $series = ReservationSeries::Create($this->userSession->UserId, $resource, "", "", $duration, new RepeatNone(), $this->userSession);
             }
+            var_dump("hi");
             $conflict = $this->reservationConflictIdentifier->GetConflicts($series);
+            var_dump($conflict);
 
             if (!$conflict->AllowReservation()) {
                 $unavailable[] = $resource->GetId();

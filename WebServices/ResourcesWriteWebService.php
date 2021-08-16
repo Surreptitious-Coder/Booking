@@ -104,6 +104,7 @@ class ResourcesWriteWebService
 		Log::Debug('ResourcesWriteWebService.Delete() Resource=%s', $this->server->GetSession()->UserId);
 
 		$result = $this->controller->Delete($resourceId, $this->server->GetSession());
+		
 
 		if ($result->WasSuccessful())
 		{

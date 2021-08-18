@@ -11,11 +11,11 @@ class Date
     /**
      * @var DateTime
      */
-    private $date;
-    private $parts;
-    private $timezone;
-    private $timestring;
-    private $timestamp;
+    public $date;
+    public $parts;
+    public $timezone;
+    public $timestring;
+    public $timestamp;
 
     const SHORT_FORMAT = "Y-m-d H:i:s";
 
@@ -59,6 +59,7 @@ class Date
             $year = $year + $yearOffset;
             $month = $month - ($yearOffset * 12);
         }
+        
 
         return new Date(sprintf('%04d-%02d-%02d %02d:%02d:%02d', $year, $month, $day, $hour, $minute,
             $second), $timezone);

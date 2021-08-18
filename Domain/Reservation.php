@@ -28,6 +28,7 @@ class Reservation
 	 */
 	public function StartDate()
 	{
+		
 		return $this->startDate;
 	}
 

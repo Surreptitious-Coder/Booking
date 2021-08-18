@@ -25,8 +25,8 @@ values ('User', 'User', 'user@example.com', 'user', '7b6aec38ff9b7650d64d0374194
 insert into `user_groups` values (2,2);
 
 insert into `resources` (`resource_id`, `name`, `location`, `contact_info`, `description`, `notes`, `min_duration`, `min_increment`, `max_duration`, `unit_cost`, `autoassign`, `requires_approval`, `allow_multiday_reservations`, `max_participants`, `min_notice_time_add`, `max_notice_time`, `image_name`, `legacyid`, `schedule_id`,`RAM`,`HDD`,`spin_up_time`,`CPU`) VALUES
-  (1, 'Mint', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, 0, NULL, 'resource1.jpg', NULL, 1,1000,100,50,2),
-  (2, 'Arch', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, 0, NULL, 'resource2.jpg', NULL, 1,1000,100,50,2);
+  (1, 'Mint', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, 60, NULL, 'resource1.jpg', NULL, 1,1000,100,50,2),
+  (2, 'Arch', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, 60, NULL, 'resource2.jpg', NULL, 1,1000,100,50,2);
 
 
 insert into `modules` (`module_id`,`name`,`description`,`notes`,`min_duration`,`min_increment`,`max_duration`,`allow_multiday_reservations`,`min_notice_time`,`max_notice_time`,`schedule_id`,`CPU`,`spin_up_time`,`HDD`,`RAM`) VALUES

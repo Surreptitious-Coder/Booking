@@ -7,7 +7,7 @@ insert into `reservation_statuses` values (1, 'Created'), (2, 'Deleted'), (3, 'P
 insert into `layouts` values (1, 'Etc/UTC',0);
 
 insert into `time_blocks` (`availability_code`, `layout_id`, `start_time`, `end_time`) values
-(2, 1, '00:00', '08:00'),
+(2, 1, '00:00', '07:00'),
 (1, 1, '08:00', '08:30'),
 (1, 1, '08:30', '09:00'),
 (1, 1, '09:00', '09:30'),
@@ -31,7 +31,8 @@ insert into `time_blocks` (`availability_code`, `layout_id`, `start_time`, `end_
 (1, 1, '18:00', '18:30'),
 (1, 1, '19:00', '19:30'),
 (1, 1, '19:30', '20:00'),
-(2, 1, '20:00', '00:00');
+(1, 1, '20:30', '21:00'),
+(2, 1, '22:00', '00:00');
 
 insert into `schedules` (`schedule_id`, `name`, `isdefault`, `weekdaystart`, `layout_id`) values (1, 'Default', 1, 0, 1);
 

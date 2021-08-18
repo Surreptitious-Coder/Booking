@@ -133,8 +133,8 @@ class ReservationDeleteJsonPage extends ReservationDeletePage implements IReserv
 	{
 		
 		$reservation = $this->presenter->BuildReservation();
+		$link = mysqli_connect("172.29.0.2", $user="root", $password="Hi");
 
-		$link = mysqli_connect("172.27.0.2", $user="root", $password="Hi");
 		$reservationId = $this->GetForm(FormKeys::REFERENCE_NUMBER);
 		$query = "DELETE from bookedscheduler.reservation_instances where reference_number='$reservationId'";
 

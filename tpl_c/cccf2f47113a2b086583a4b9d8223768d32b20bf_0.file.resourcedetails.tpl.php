@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-16 11:21:48
+/* Smarty version 3.1.34-dev-7, created on 2021-08-18 18:20:02
   from '/var/www/html/tpl/Ajax/resourcedetails.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611a4a4ccf92f2_21973868',
+  'unifunc' => 'content_611d4f523f6090_34232402',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611a4a4ccf92f2_21973868 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611d4f523f6090_34232402 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="resourceDetailsPopup">
     <?php $_smarty_tpl->_assignInScope('h4Style', '');?>
     <?php if (!empty($_smarty_tpl->tpl_vars['color']->value)) {?>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-16 10:51:53
+/* Smarty version 3.1.34-dev-7, created on 2021-08-18 09:51:13
   from '/var/www/html/tpl/Reservation/pdf.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611a4349cb9359_37965829',
+  'unifunc' => 'content_611cd811e18a78_87096219',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611a4349cb9359_37965829 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611cd811e18a78_87096219 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/lib/external/Smarty/plugins/modifier.capitalize.php','function'=>'smarty_modifier_capitalize',),));
 ?>
 var allAttributes;
@@ -188,8 +188,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>'},
 			<?php }?>	
 			[{ content: '<?php ob_start();
 echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>'RepeatUntilPrompt'),$_smarty_tpl ) );
-$_prefixVariable2 = ob_get_clean();
-echo strtr($_prefixVariable2, array("\\" => "\\\\", "'" => "\\'", "\"" => "\\\"", "\r" => "\\r", "\n" => "\\n", "</" => "<\/" ));?>
+$_prefixVariable1 = ob_get_clean();
+echo strtr($_prefixVariable1, array("\\" => "\\\\", "'" => "\\'", "\"" => "\\\"", "\r" => "\\r", "\n" => "\\n", "</" => "<\/" ));?>
 ', styles: { fontStyle: 'bold'}},
 			 { colSpan: 3, content: '<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['formatdate'][0], array( array('date'=>$_smarty_tpl->tpl_vars['RepeatTerminationDate']->value),$_smarty_tpl ) );?>
 '},	 
@@ -403,8 +403,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		body: [
 		[{ content: '<?php ob_start();
 echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>'Attachments'),$_smarty_tpl ) );
-$_prefixVariable3 = ob_get_clean();
-echo strtr($_prefixVariable3, array("\\" => "\\\\", "'" => "\\'", "\"" => "\\\"", "\r" => "\\r", "\n" => "\\n", "</" => "<\/" ));?>
+$_prefixVariable2 = ob_get_clean();
+echo strtr($_prefixVariable2, array("\\" => "\\\\", "'" => "\\'", "\"" => "\\\"", "\r" => "\\r", "\n" => "\\n", "</" => "<\/" ));?>
  (<?php echo count((($tmp = @$_smarty_tpl->tpl_vars['Attachments']->value)===null||$tmp==='' ? array() : $tmp));?>
 )', styles: { fontStyle: 'bold'}},
 		],

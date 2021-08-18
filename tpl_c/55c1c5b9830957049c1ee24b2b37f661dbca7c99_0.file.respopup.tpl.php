@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-16 11:09:30
+/* Smarty version 3.1.34-dev-7, created on 2021-08-18 11:04:04
   from '/var/www/html/tpl/Ajax/respopup.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611a476a51a3d4_86167907',
+  'unifunc' => 'content_611ce924880197_26711512',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611a476a51a3d4_86167907 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611ce924880197_26711512 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/lib/external/Smarty/plugins/modifier.truncate.php','function'=>'smarty_modifier_truncate',),));
 if ($_smarty_tpl->tpl_vars['authorized']->value) {?>
     <div class="res_popup_details" style="margin:0">

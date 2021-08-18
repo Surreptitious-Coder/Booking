@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-16 10:51:53
+/* Smarty version 3.1.34-dev-7, created on 2021-08-18 09:50:01
   from '/var/www/html/tpl/Controls/DatePickerSetup.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611a4349c468e0_66554676',
+  'unifunc' => 'content_611cd7c94c5c38_02213313',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,13 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611a4349c468e0_66554676 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611cd7c94c5c38_02213313 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'datePickerDateFormat' => 
   array (
     'compiled_filepath' => '/var/www/html/tpl_c/a58917818ad5648d05a8b8887b1d7fd9a08859fe_0.file.DatePickerSetup.tpl.php',
     'uid' => 'a58917818ad5648d05a8b8887b1d7fd9a08859fe',
-    'call_name' => 'smarty_template_function_datePickerDateFormat_2062215701611a4349c30163_99710350',
+    'call_name' => 'smarty_template_function_datePickerDateFormat_1773685829611cd7c94ac507_58770182',
   ),
 ));
 echo '<script'; ?>
@@ -114,9 +114,9 @@ echo strtr($_prefixVariable1, array("\\" => "\\\\", "'" => "\\'", "\"" => "\\\""
 <?php echo '</script'; ?>
 >
 <?php }
-/* smarty_template_function_datePickerDateFormat_2062215701611a4349c30163_99710350 */
-if (!function_exists('smarty_template_function_datePickerDateFormat_2062215701611a4349c30163_99710350')) {
-function smarty_template_function_datePickerDateFormat_2062215701611a4349c30163_99710350(Smarty_Internal_Template $_smarty_tpl,$params) {
+/* smarty_template_function_datePickerDateFormat_1773685829611cd7c94ac507_58770182 */
+if (!function_exists('smarty_template_function_datePickerDateFormat_1773685829611cd7c94ac507_58770182')) {
+function smarty_template_function_datePickerDateFormat_1773685829611cd7c94ac507_58770182(Smarty_Internal_Template $_smarty_tpl,$params) {
 foreach ($params as $key => $value) {
 $_smarty_tpl->tpl_vars[$key] = new Smarty_Variable($value, $_smarty_tpl->isRenderingCache);
 }
@@ -128,5 +128,5 @@ new Date(<?php echo $_smarty_tpl->tpl_vars['date']->value->Year();?>
 )
 <?php
 }}
-/*/ smarty_template_function_datePickerDateFormat_2062215701611a4349c30163_99710350 */
+/*/ smarty_template_function_datePickerDateFormat_1773685829611cd7c94ac507_58770182 */
 }

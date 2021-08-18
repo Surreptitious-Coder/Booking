@@ -137,7 +137,7 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 		error_reporting(E_ERROR);
 		#var_dump("IsInConflict");
 		
-		$link = mysqli_connect("172.29.0.2", $user="root", $password="Hi");
+		$link = mysqli_connect("192.168.160.2", $user="root", $password="Hi");
 	
 		#$instance = ["id"=>1,"start_date"=>'2021-08-06 12:00:00',"end_date"=> '2021-08-06 12:40:01',"ref"=> '610c5dd321baa684688475',"series_id"=>1,"CPU"=>4,"spin"=>50,"HDD"=>200,"RAM"=>1000];
 		$relevant = ["CPU"=>0,"RAM"=>0,"HDD"=>0];
@@ -194,8 +194,11 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 
 			
 
-			$end_item = strtotime($item['end_date'])+(60*60);
-			$end_instance = strtotime($end)+(60*60);
+			$end_item = strtotime($item['end_date']);
+			$end_instance = strtotime($end);
+
+			$start = strtotime($start)-(60*60);
+			$start_item = strtotime($item['start_date'])-(60*60);
 
 			#var_dump($end_instance);
 			#var_dump($end_item);
@@ -205,8 +208,8 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 
 
 		
-			if ((((strtotime($start) >= strtotime($item['start_date'])) && strtotime($start) < $end_item) ||  $end_instance  >= strtotime($item['start_date']) && ($end_instance  < $end_item ))
-		|| ((strtotime($item['start_date']) >= strtotime($start) && (strtotime($item['start_date']) < $end_instance))   || (($end_item >= strtotime($start)) && ($end_item < $end_instance )))) {
+			if (((($start >= $start_item) && ($start < $end_item)) ||  $end_instance  >= $start_item && ($end_instance  < $end_item ))
+		|| (($start_item >= $start && ($start_item < $end_instance))   || (($end_item >= $start) && ($end_item < $end_instance )))) {
 	
 
 			var_dump($end_instance);

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-18 09:51:14
+/* Smarty version 3.1.34-dev-7, created on 2021-08-18 20:51:34
   from '/var/www/html/tpl/Ajax/reservation/reservation_attributes_print.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611cd8124617d3_07862492',
+  'unifunc' => 'content_611d72d64168f8_93565682',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611cd8124617d3_07862492 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611d72d64168f8_93565682 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'../../lib/external/Smarty/plugins/modifier.escape.php','function'=>'smarty_modifier_escape',),));
 if (count((($tmp = @$_smarty_tpl->tpl_vars['Attributes']->value)===null||$tmp==='' ? array() : $tmp)) > 0) {?>
 	<?php

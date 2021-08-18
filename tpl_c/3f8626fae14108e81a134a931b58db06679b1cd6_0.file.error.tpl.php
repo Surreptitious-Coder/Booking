@@ -1,15 +1,15 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-18 11:03:27
+/* Smarty version 3.1.34-dev-7, created on 2021-08-18 21:37:24
   from '/var/www/html/tpl/error.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611ce8ff5a99e6_76564615',
+  'unifunc' => 'content_611d7d947b1373_73508076',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '5374404aaf96d017e84acb2ffddc1641cb89b1d8' => 
+    '3f8626fae14108e81a134a931b58db06679b1cd6' => 
     array (
       0 => '/var/www/html/tpl/error.tpl',
       1 => 1628215355,
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:globalfooter.tpl' => 1,
   ),
 ),false)) {
-function content_611ce8ff5a99e6_76564615 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611d7d947b1373_73508076 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:globalheader.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="error">

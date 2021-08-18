@@ -1,15 +1,15 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-18 11:03:09
+/* Smarty version 3.1.34-dev-7, created on 2021-08-18 21:37:24
   from '/var/www/html/tpl/globalfooter.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611ce8edd1a3a7_17275152',
+  'unifunc' => 'content_611d7d948eeef1_45197174',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '346a6d96c187ad921320be1060b7796f70452f99' => 
+    'eba1842e6a732f50cbac56527393bfda2cf6451d' => 
     array (
       0 => '/var/www/html/tpl/globalfooter.tpl',
       1 => 1628761708,
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611ce8edd1a3a7_17275152 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611d7d948eeef1_45197174 (Smarty_Internal_Template $_smarty_tpl) {
 ?>	</div><!-- close main-->
 
 	<footer class="footer navbar">

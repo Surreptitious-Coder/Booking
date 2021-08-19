@@ -27,7 +27,7 @@
             							<span class="visible-xs"><i class="fa fa-arrow-circle-left"></i></span>
             						</button>
                                     {block name="submitButtons"}
-            							<button type="button" class="btn btn-success save create btnCreate">
+            							<button type="button" class="btn btn-primary save create btnCreate">
             								<span class="glyphicon glyphicon-ok-circle"></span>
                                             {translate key='Create'}
             							</button>
@@ -385,7 +385,7 @@
                             <span class="visible-xs"><i class="fa fa-arrow-circle-left"></i></span>
                         </button>
                         {block name="submitButtons"}
-                            <button type="button" class="btn btn-success save create btnCreate">
+                            <button type="button" class="btn btn-primary save create btnCreate">
                                 <span class="glyphicon glyphicon-ok-circle"></span>
                                 {translate key='Create'}
                             </button>

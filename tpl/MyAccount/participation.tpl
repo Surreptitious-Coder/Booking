@@ -23,7 +23,7 @@
 							- {formatdate date=$reservation->EndDate->ToTimezone($Timezone) key=dashboard}</a></h3>
 					<input type="hidden" value="{$referenceNumber}" class="referenceNumber"/>
 					<button value="{InvitationAction::Accept}"
-							class="btn btn-success participationAction"><i class="fa fa-check-circle"></i> {translate key="Accept"}</button>
+							class="btn btn-primary participationAction"><i class="fa fa-check-circle"></i> {translate key="Accept"}</button>
 					<button value="{InvitationAction::Decline}"
 							class="btn btn-default participationAction"><i class="fa fa-times-circle"></i> {translate key="Decline"}</button>
 				</li>

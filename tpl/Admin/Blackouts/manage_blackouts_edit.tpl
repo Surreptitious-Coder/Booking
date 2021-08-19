@@ -81,16 +81,16 @@
 					{translate key='Cancel'}
 				</button>
 				{if $IsRecurring}
-					<button type="button" class="btn btn-success save btnUpdateThisInstance">
+					<button type="button" class="btn btn-primary save btnUpdateThisInstance">
 						<span class="glyphicon glyphicon-ok-circle"></span>
 						{translate key='ThisInstance'}
 					</button>
-					<button type="button" class="btn btn-success save btnUpdateAllInstances">
+					<button type="button" class="btn btn-primary save btnUpdateAllInstances">
 						<span class="glyphicon glyphicon-ok-circle"></span>
 						{translate key='AllInstances'}
 					</button>
 				{else}
-					<button type="button" class="btn btn-success save update btnUpdateAllInstances">
+					<button type="button" class="btn btn-primary save update btnUpdateAllInstances">
 						<span class="glyphicon glyphicon-ok-circle"></span>
 						{translate key='Update'}
 					</button>

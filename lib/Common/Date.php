@@ -11,11 +11,11 @@ class Date
     /**
      * @var DateTime
      */
-    public $date;
-    public $parts;
-    public $timezone;
-    public $timestring;
-    public $timestamp;
+    private $date;
+    private $parts;
+    private $timezone;
+    private $timestring;
+    private $timestamp;
 
     const SHORT_FORMAT = "Y-m-d H:i:s";
 

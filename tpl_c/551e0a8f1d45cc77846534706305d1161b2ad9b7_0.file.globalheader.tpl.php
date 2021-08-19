@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-18 21:37:24
+/* Smarty version 3.1.34-dev-7, created on 2021-08-19 19:18:19
   from '/var/www/html/tpl/globalheader.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611d7d948ca2a6_00401239',
+  'unifunc' => 'content_611eae7b3cc213_48423261',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '59b5c771fafe73a747333d16bb4cec7897a26206' => 
+    '551e0a8f1d45cc77846534706305d1161b2ad9b7' => 
     array (
       0 => '/var/www/html/tpl/globalheader.tpl',
-      1 => 1628761708,
+      1 => 1629393771,
       2 => 'file',
     ),
   ),
@@ -20,17 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611d7d948ca2a6_00401239 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611eae7b3cc213_48423261 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="<?php echo $_smarty_tpl->tpl_vars['HtmlLang']->value;?>
 " dir="<?php echo $_smarty_tpl->tpl_vars['HtmlTextDirection']->value;?>
 ">
 <head>
-    <title><?php if ($_smarty_tpl->tpl_vars['TitleKey']->value != '') {
-echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>$_smarty_tpl->tpl_vars['TitleKey']->value,'args'=>$_smarty_tpl->tpl_vars['TitleArgs']->value),$_smarty_tpl ) );
-} else {
-echo $_smarty_tpl->tpl_vars['Title']->value;
-}?></title>
+    <title>Booking System</title>
     <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $_smarty_tpl->tpl_vars['Charset']->value;?>
 "/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -264,7 +260,6 @@ echo Pages::CREDITS;?>
  <b
                                         class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                
                                 <li id="navMyCalendar"><a
                                             href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;
 echo Pages::MY_CALENDAR;?>
@@ -511,7 +506,6 @@ admin/server_settings.php"><?php echo call_user_func_array( $_smarty_tpl->smarty
 admin/data_cleanup.php"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"DataCleanup"),$_smarty_tpl ) );?>
 </a>
                                 </li>
-                                
                             </ul>
                         </li>
                     <?php }?>
@@ -520,7 +514,6 @@ admin/data_cleanup.php"><?php echo call_user_func_array( $_smarty_tpl->smarty->r
  <b
                                     class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            
                             <li id="navAbout"><a href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
 help.php?ht=about"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>'About'),$_smarty_tpl ) );?>
 </a></li>

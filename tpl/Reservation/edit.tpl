@@ -82,7 +82,7 @@
                 class="fa fa-sign-out"></i> {translate key=CheckOut}</button>
 {/if}
 {if $IsRecurring}
-    <button type="button" class="btn btn-success update prompt">
+    <button type="button" class="btn btn-primary update prompt">
         <span class="glyphicon glyphicon-ok-circle"></span>
         {translate key='Update'}
     </button>
@@ -103,15 +103,15 @@
                         </div>
                     </div>
 
-                    <button type="button" class="btn btn-success save btnUpdateThisInstance">
+                    <button type="button" class="btn btn-primary save btnUpdateThisInstance">
                         <span class="fa fa-check"></span>
                         {translate key='ThisInstance'}
                     </button>
-                    <button type="button" class="btn btn-success save btnUpdateAllInstances">
+                    <button type="button" class="btn btn-primary save btnUpdateAllInstances">
                         <span class="fa fa-check-square"></span>
                         {translate key='AllInstances'}
                     </button>
-                    <button type="button" class="btn btn-success save btnUpdateFutureInstances">
+                    <button type="button" class="btn btn-primary save btnUpdateFutureInstances">
                         <span class="fa fa-check-square-o"></span>
                         {translate key='FutureInstances'}
                     </button>
@@ -125,7 +125,7 @@
 
 {else}
 
-    <button type="button" class="btn btn-success save update btnEdit">
+    <button type="button" class="btn btn-primary save update btnEdit">
         <span class="glyphicon glyphicon-ok-circle"></span>
         {translate key='Update'}
     </button>
@@ -207,7 +207,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-success" id="btnSendReservation">
+                <button type="button" class="btn btn-primary" id="btnSendReservation">
                     <span class="fa fa-envelope"></span>
                     {translate key='Email'}
                 </button>

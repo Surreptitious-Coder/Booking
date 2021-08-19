@@ -9,5 +9,5 @@
 		<div id="checked-out-message" class="reservation-message">{translate key=CheckedOutSuccess}</div>
 	{/if}
 
-	<input type="button" id="btnSaveSuccessful" value="{translate key='Close'}" class="btn btn-success" />
+	<input type="button" id="btnSaveSuccessful" value="{translate key='Close'}" class="btn btn-primary" />
 </div>

@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+ID=$(sudo docker ps -aqf "name=booked-database")
+IP=$(sudo docker inspect "$ID" --format='{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}')
+user="root"
+password="Hi"
+
+sudo sed -i "102s/.*/\$conf['settings']['database']['hostspec'] = '$IP';"/ config/config.php
+sudo sed -i "140s/.*/\t    \$link = mysqli_connect('$IP', \$user='$user', \$password='$password');"/ lib/Application/Reservation/ReservationConflictIdentifier.php
+sudo sed -i "136s/.*/\t    \$link = mysqli_connect('$IP', \$user='$user', \$password='$password');"/ Pages/Ajax/ReservationDeletePage.php

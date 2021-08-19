@@ -39,7 +39,7 @@
 
                 <div class="admin-update-buttons">
                     <button id="btnUpload" type="button"
-                            class="btn btn-success save"><i class="fa fa fa-upload"></i> {translate key=Import}</button>
+                            class="btn btn-primary save"><i class="fa fa fa-upload"></i> {translate key=Import}</button>
                     {indicator}
                 </div>
                 {csrf_token}

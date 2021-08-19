@@ -241,7 +241,7 @@
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default cancel"
 							data-dismiss="modal">{translate key='Cancel'}</button>
-					<button type="button" id="btnSaveReport" class="btn btn-success"><span
+					<button type="button" id="btnSaveReport" class="btn btn-primary"><span
 								class="glyphicon glyphicon-ok-circle"></span>
 						{translate key='SaveThisReport'}
 					</button>

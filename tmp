@@ -1,0 +1,81 @@
+Booked Scheduler - Create Reservation
+Dashboard
+My Account 
+Schedule 
+Application Management 
+Reports 
+ 
+Help 
+Sign Out
+New Reservation
+  View Availability
+Admin Admin (admin@example.com) Change 
+Begin 
+08/20/2021
+ 
+11:00 AM
+End 
+08/20/2021
+ 
+11:30 AM
+0 days 0 hours 30 minutes
+Repeat 
+Does Not Repeat
+Resources Change 
+ArchAccessories Add 
+Title of reservation
+Description of reservation
+Participant List 0
+Add 
+name or email
+ |  
+Invitees 0
+Add 
+name or email
+ |  
+Allow Participants To Join
+ 
+
+Created using Booked Scheduler GPLv3 v2.8.5.3
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:214:int 1629459000
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:215:string '2021-08-20 11:30:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:217:string '2021-08-20 10:30:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:218:string '2021-08-20 11:00:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:221:boolean true
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:222:boolean false
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:223:boolean false
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:224:boolean false
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:225:boolean false
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:227:string '2021-08-20 10:30:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:228:string '2021-08-20 11:00:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:214:int 1629459000
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:215:string '2021-08-20 11:30:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:217:string '2021-08-20 11:30:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:218:string '2021-08-20 18:30:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:221:boolean true
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:222:boolean false
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:223:boolean true
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:224:boolean false
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:225:boolean false
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:227:string '2021-08-20 11:30:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:228:string '2021-08-20 18:30:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:214:int 1629459000
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:215:string '2021-08-20 11:30:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:217:string '2021-08-20 10:00:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:218:string '2021-08-20 10:30:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:221:boolean true
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:222:boolean false
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:223:boolean false
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:224:boolean false
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:225:boolean false
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:227:string '2021-08-20 10:00:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:228:string '2021-08-20 10:30:00' (length=19)
+/var/www/html/lib/Application/Reservation/ReservationConflictIdentifier.php:262:
+array (size=3)
+  'CPU' => int 6
+  'RAM' => int 3000
+  'HDD' => int 300
+/var/www/html/Presenters/Reservation/ReservationSavePresenter.php:161:boolean false
+Your reservation could not be made
+There are conflicting reservations on the following dates:
+08/20/2021 - Arch

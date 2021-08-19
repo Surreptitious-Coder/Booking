@@ -71,7 +71,7 @@
   font-size: 2em;
   text-transform: uppercase;
   border: solid 1px #353432;
-  background-color: #FFF8E7;
+  background-color: #cac9ff;
   margin: 20px 0;
   text-align: center;
   -webkit-border-radius: 2px;
@@ -107,7 +107,7 @@
 }
 .resource-display .time,
 .resource-display .date {
-  color: #FFF8E7;
+  color: #cac9ff;
   font-weight: bold;
   font-size: 2em;
   text-align: right;
@@ -151,7 +151,7 @@
 }
 .resource-display-reservation,
 .resource-display-none {
-  color: #FFF8E7;
+  color: #cac9ff;
   font-size: 1.3em;
 }
 .resource-display-reservation .title,

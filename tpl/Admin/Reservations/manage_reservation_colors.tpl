@@ -14,7 +14,7 @@
                     {/foreach}
                 </select>
 
-                <button type="button" class="btn btn-success" id="addRuleButton">
+                <button type="button" class="btn btn-primary" id="addRuleButton">
                     <i class="fa fa-plus"></i> {translate key='AddRule'}
                 </button>
             </div>

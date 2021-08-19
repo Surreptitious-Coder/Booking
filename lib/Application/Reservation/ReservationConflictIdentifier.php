@@ -137,7 +137,7 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 		error_reporting(E_ERROR);
 		#var_dump("IsInConflict");
 		
-		$link = mysqli_connect("192.168.160.2", $user="root", $password="Hi");
+	    $link = mysqli_connect('172.19.0.2', $user='root', $password='Hi');
 	
 		#$instance = ["id"=>1,"start_date"=>'2021-08-06 12:00:00',"end_date"=> '2021-08-06 12:40:01',"ref"=> '610c5dd321baa684688475',"series_id"=>1,"CPU"=>4,"spin"=>50,"HDD"=>200,"RAM"=>1000];
 		$relevant = ["CPU"=>0,"RAM"=>0,"HDD"=>0];
@@ -182,7 +182,6 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 	
 		//if instance between result.start_time and result.end_time or result between instance.start_time and instance.end_time
 		foreach ($reservation_instances as $item) {
-
 			$start = ($instance->startDate());
 			$start = (substr($start.'timestring',0,19));
 

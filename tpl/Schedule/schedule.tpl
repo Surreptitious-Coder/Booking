@@ -253,7 +253,7 @@
                             {if count($ResourceAttributes) + count($ResourceTypeAttributes) > 5}
                                 <div>
                                     <input type="submit" value="{translate key=Filter}"
-                                           class="btn btn-success btn-sm" {formname key=SUBMIT}/>
+                                           class="btn btn-primary btn-sm" {formname key=SUBMIT}/>
                                 </div>
                             {/if}
 
@@ -306,7 +306,7 @@
                                 {/foreach}
 
                                 <div class="btn-submit">
-                                    <button type="submit" class="btn btn-success btn-sm"
+                                    <button type="submit" class="btn btn-primary btn-sm"
                                             value="submit">{translate key=Filter}</button>
                                 </div>
                                 <div class="btn-clear">

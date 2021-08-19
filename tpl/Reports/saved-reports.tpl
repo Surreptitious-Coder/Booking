@@ -73,7 +73,7 @@
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default cancel"
 									data-dismiss="modal">{translate key='Cancel'}</button>
-							<button id="btnSendEmail" type="button" class="btn btn-success save"><span
+							<button id="btnSendEmail" type="button" class="btn btn-primary save"><span
 										class="fa fa-envelope-o"></span> {translate key=EmailReport}
 							</button>
 							{indicator}

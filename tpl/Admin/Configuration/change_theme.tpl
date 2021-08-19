@@ -61,7 +61,7 @@
 
             <div class="clearfix"></div>
 
-            <button type="button" class="btn btn-success update margin-top-25" name="{Actions::SAVE}" id="saveButton">
+            <button type="button" class="btn btn-primary update margin-top-25" name="{Actions::SAVE}" id="saveButton">
                 {translate key='Update'}
             </button>
 

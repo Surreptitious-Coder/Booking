@@ -28,5 +28,5 @@
 		<div id="approval-message">{translate key=ReservationRequiresApproval}</div>
 	{/if}
 
-	<input type="button" id="btnSaveSuccessful" value="{translate key='Close'}" class="btn btn-success" />
+	<input type="button" id="btnSaveSuccessful" value="{translate key='Close'}" class="btn btn-primary" />
 </div>

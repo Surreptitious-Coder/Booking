@@ -1,15 +1,15 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-18 21:37:24
+/* Smarty version 3.1.34-dev-7, created on 2021-08-19 19:18:19
   from '/var/www/html/tpl/javascript-includes.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611d7d948eaf44_03264361',
+  'unifunc' => 'content_611eae7b3f0d01_85057579',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '6a16443002591457eb7c9e1ab3715e7bdf51bfba' => 
+    '37b52671d0bc6df3f9efd0d20bcc4d5a621af0e1' => 
     array (
       0 => '/var/www/html/tpl/javascript-includes.tpl',
       1 => 1628215355,
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611d7d948eaf44_03264361 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611eae7b3f0d01_85057579 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['UseLocalJquery']->value) {?>
                 <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['jsfile'][0], array( array('src'=>"js/lodash.4.6.13.min.js"),$_smarty_tpl ) );?>
 

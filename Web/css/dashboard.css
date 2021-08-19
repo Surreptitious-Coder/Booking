@@ -97,7 +97,7 @@
   padding: 3px;
   font-style: italic;
   color: #000;
-  background-color: #FFF8E7;
+  background-color: #cac9ff;
   border-bottom: 1px solid #E9E9E9;
 }
 .upcomingReservationsDashboard .reservation {
@@ -149,9 +149,9 @@
   padding: 10px 0;
 }
 .availabilityDashboard .availabilityItem .btn {
-  background-color: #58AC58;
+  background-color: #5514b4;
   color: #fff;
-  border-color: #458c45;
+  border-color: #5514b4;
   padding: 1px 20px;
 }
 .availabilityDashboard .availabilityItem .btn:hover {

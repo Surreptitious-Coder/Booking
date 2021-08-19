@@ -111,7 +111,7 @@
         </div>
         <div id="configSettings">
 
-            <input type="button" value="{translate key=Update}" class='btn btn-success save'/>
+            <input type="button" value="{translate key=Update}" class='btn btn-primary save'/>
 
             <form id="frmConfigSettings" method="post" ajaxAction="{ConfigActions::Update}"
                   action="{$smarty.server.SCRIPT_NAME}">
@@ -133,7 +133,7 @@
 
                 <input type="hidden" name="setting_names" value="{$SettingNames}"/>
             </form>
-            <input type="button" value="{translate key=Update}" class='btn btn-success save'/>
+            <input type="button" value="{translate key=Update}" class='btn btn-primary save'/>
 
         </div>
 

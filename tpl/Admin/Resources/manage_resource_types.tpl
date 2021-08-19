@@ -25,7 +25,7 @@
 				</div>
 			</div>
 			<div class="panel-footer">
-				<button type="button" class="btn btn-success btn-sm save create">
+				<button type="button" class="btn btn-primary btn-sm save create">
 					<span class="glyphicon glyphicon-ok-circle"></span>
 					{translate key='Create'}
 				</button>

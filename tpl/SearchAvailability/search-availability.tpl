@@ -141,7 +141,7 @@
         </div>
 
         <div class="form-group col-xs-12">
-            <button type="submit" class="btn btn-success col-xs-12"
+            <button type="submit" class="btn btn-primary col-xs-12"
                     value="submit" {formname key=SUBMIT}>{translate key=FindATime}</button>
             {indicator}
         </div>

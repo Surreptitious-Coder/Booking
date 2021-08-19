@@ -482,7 +482,7 @@
                     </div>
                     <div class="modal-footer">
                         {cancel_button}
-                        <button type="button" class="btn btn-success save"><span
+                        <button type="button" class="btn btn-primary save"><span
                                     class="fa fa-send"></span> {translate key=InviteUsers}</button>
                         {indicator}
                     </div>

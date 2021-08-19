@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-18 20:51:23
+/* Smarty version 3.1.34-dev-7, created on 2021-08-19 18:02:14
   from '/var/www/html/tpl/javascript-includes.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611d72cb6728b8_66118966',
+  'unifunc' => 'content_611e9ca64b8233_74221602',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611d72cb6728b8_66118966 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611e9ca64b8233_74221602 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['UseLocalJquery']->value) {?>
                 <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['jsfile'][0], array( array('src'=>"js/lodash.4.6.13.min.js"),$_smarty_tpl ) );?>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{$HtmlLang}" dir="{$HtmlTextDirection}">
 <head>
-    <title>{if $TitleKey neq ''}{translate key=$TitleKey args=$TitleArgs}{else}{$Title}{/if}</title>
+    <title>Booking System</title>
     <meta http-equiv="Content-Type" content="text/html; charset={$Charset}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex"/>
@@ -157,7 +157,6 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Schedule"} <b
                                         class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                
                                 <li id="navMyCalendar"><a
                                             href="{$Path}{Pages::MY_CALENDAR}">{translate key="MyCalendar"}</a></li>
                                 <li id="navResourceCalendar"><a
@@ -324,7 +323,6 @@
                                 <li id="navDataCleanup"><a
                                             href="{$Path}admin/data_cleanup.php">{translate key="DataCleanup"}</a>
                                 </li>
-                                
                             </ul>
                         </li>
                     {/if}
@@ -332,7 +330,6 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Help"} <b
                                     class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            
                             <li id="navAbout"><a href="{$Path}help.php?ht=about">{translate key=About}</a></li>
                         </ul>
                     </li>

@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+sudo systemctl stop mysql
+sudo chmod +777 -R *
+ID=$(sudo docker ps -aqf "name=booked-database")
+sudo docker stop $ID
+sudo docker rm $ID
+sudo docker-compose down
+sudo docker-compose build
+sudo docker-compose up & sudo ./update_server_ip

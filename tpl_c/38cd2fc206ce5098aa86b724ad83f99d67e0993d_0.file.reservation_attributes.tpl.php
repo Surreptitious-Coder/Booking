@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-19 18:06:13
+/* Smarty version 3.1.34-dev-7, created on 2021-08-20 09:51:51
   from '/var/www/html/tpl/Ajax/reservation/reservation_attributes.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611e9d95542e29_10290703',
+  'unifunc' => 'content_611f7b370226b8_46906629',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611e9d95542e29_10290703 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611f7b370226b8_46906629 (Smarty_Internal_Template $_smarty_tpl) {
 if (count((($tmp = @$_smarty_tpl->tpl_vars['Attributes']->value)===null||$tmp==='' ? array() : $tmp)) > 0) {?>
     <div class="customAttributes">
         <div class="row">

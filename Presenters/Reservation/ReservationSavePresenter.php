@@ -158,7 +158,7 @@ class ReservationSavePresenter implements IReservationSavePresenter
 					$reservationSeries,
 					$this->page);
 					
-		var_dump($successfullySaved);
+		#var_dump($successfullySaved);
 
 
 		if ($successfullySaved)

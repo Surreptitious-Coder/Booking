@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-19 18:02:29
+/* Smarty version 3.1.34-dev-7, created on 2021-08-20 09:51:43
   from '/var/www/html/tpl/SearchAvailability/search-availability.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611e9cb58de431_65939835',
+  'unifunc' => 'content_611f7b2f7f8231_76608623',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '09346d065761203fd04ec20d45bed6e52657aa40' => 
     array (
       0 => '/var/www/html/tpl/SearchAvailability/search-availability.tpl',
-      1 => 1628215355,
+      1 => 1629397615,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:globalfooter.tpl' => 1,
   ),
 ),false)) {
-function content_611e9cb58de431_65939835 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611f7b2f7f8231_76608623 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:globalheader.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('Select2'=>true,'Owl'=>true,'Timepicker'=>true), 0, false);
 ?>
 

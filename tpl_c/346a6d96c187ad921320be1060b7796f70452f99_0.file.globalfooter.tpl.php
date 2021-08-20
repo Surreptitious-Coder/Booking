@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-19 19:18:19
+/* Smarty version 3.1.34-dev-7, created on 2021-08-20 09:52:13
   from '/var/www/html/tpl/globalfooter.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611eae7b40fe72_88349886',
+  'unifunc' => 'content_611f7b4d35b349_41676270',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611eae7b40fe72_88349886 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611f7b4d35b349_41676270 (Smarty_Internal_Template $_smarty_tpl) {
 ?>	</div><!-- close main-->
 
 	<footer class="footer navbar">

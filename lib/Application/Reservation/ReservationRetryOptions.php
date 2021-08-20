@@ -32,9 +32,9 @@ class ReservationRetryOptions implements IReservationRetryOptions
 			return;
 		}
 
-		var_dump("hi");
+		#var_dump("hi");
 		$conflicts = $this->conflictIdentifier->GetConflicts($series);
-		var_dump($conflicts);
+		#var_dump($conflicts);
 
 		foreach ($conflicts->Conflicts() as $conflict) {
 			$series->RemoveInstance($conflict->Reservation);

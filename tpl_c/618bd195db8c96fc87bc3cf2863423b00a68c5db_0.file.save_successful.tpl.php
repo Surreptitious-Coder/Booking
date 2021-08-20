@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-19 19:12:00
+/* Smarty version 3.1.34-dev-7, created on 2021-08-20 09:52:04
   from '/var/www/html/tpl/Ajax/reservation/save_successful.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611ead002d38a0_00201358',
+  'unifunc' => 'content_611f7b448ab339_68009334',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611ead002d38a0_00201358 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611f7b448ab339_68009334 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['divId']->value)===null||$tmp==='' ? 'reservation-created' : $tmp);?>
 " class="reservationResponseMessage">
 	<div id="reservation-response-image">

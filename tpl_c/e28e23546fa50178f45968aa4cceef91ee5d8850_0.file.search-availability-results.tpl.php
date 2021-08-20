@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-19 18:02:31
+/* Smarty version 3.1.34-dev-7, created on 2021-08-20 09:51:45
   from '/var/www/html/tpl/SearchAvailability/search-availability-results.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611e9cb700de03_77447763',
+  'unifunc' => 'content_611f7b31cd23d4_46284327',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611e9cb700de03_77447763 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611f7b31cd23d4_46284327 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['Openings']->value, 'opening');
 $_smarty_tpl->tpl_vars['opening']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['opening']->value) {

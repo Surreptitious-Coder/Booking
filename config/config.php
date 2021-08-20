@@ -99,7 +99,7 @@ $conf['settings']['uploads']['reservation.attachment.extensions'] = 'txt,jpg,gif
 $conf['settings']['database']['type'] = 'mysql';
 $conf['settings']['database']['user'] = 'booked_user';        // database user with permission to the booked database
 $conf['settings']['database']['password'] = 'Hi';
-$conf['settings']['database']['hostspec'] = '172.19.0.2';
+$conf['settings']['database']['hostspec'] = '172.20.0.2';
 $conf['settings']['database']['name'] = 'bookedscheduler';
 /**
  * Mail server configuration

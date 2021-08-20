@@ -1,15 +1,15 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-08-20 09:52:13
+/* Smarty version 3.1.34-dev-7, created on 2021-08-20 09:57:00
   from '/var/www/html/tpl/Controls/DatePickerSetup.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_611f7b4d34aea2_88835446',
+  'unifunc' => 'content_611f7c6c80efe3_64091277',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '22c45a0cd50ee1e854c196599091fc50b1a36557' => 
+    '3cb7c0bede6c646f8a477b5a1b9286e707206fa0' => 
     array (
       0 => '/var/www/html/tpl/Controls/DatePickerSetup.tpl',
       1 => 1628215355,
@@ -20,13 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611f7b4d34aea2_88835446 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611f7c6c80efe3_64091277 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'datePickerDateFormat' => 
   array (
-    'compiled_filepath' => '/var/www/html/tpl_c/22c45a0cd50ee1e854c196599091fc50b1a36557_0.file.DatePickerSetup.tpl.php',
-    'uid' => '22c45a0cd50ee1e854c196599091fc50b1a36557',
-    'call_name' => 'smarty_template_function_datePickerDateFormat_688501010611f7b4d32d4b4_96291816',
+    'compiled_filepath' => '/var/www/html/tpl_c/3cb7c0bede6c646f8a477b5a1b9286e707206fa0_0.file.DatePickerSetup.tpl.php',
+    'uid' => '3cb7c0bede6c646f8a477b5a1b9286e707206fa0',
+    'call_name' => 'smarty_template_function_datePickerDateFormat_311103010611f7c6c7f1926_23966992',
   ),
 ));
 echo '<script'; ?>
@@ -114,9 +114,9 @@ echo strtr($_prefixVariable1, array("\\" => "\\\\", "'" => "\\'", "\"" => "\\\""
 <?php echo '</script'; ?>
 >
 <?php }
-/* smarty_template_function_datePickerDateFormat_688501010611f7b4d32d4b4_96291816 */
-if (!function_exists('smarty_template_function_datePickerDateFormat_688501010611f7b4d32d4b4_96291816')) {
-function smarty_template_function_datePickerDateFormat_688501010611f7b4d32d4b4_96291816(Smarty_Internal_Template $_smarty_tpl,$params) {
+/* smarty_template_function_datePickerDateFormat_311103010611f7c6c7f1926_23966992 */
+if (!function_exists('smarty_template_function_datePickerDateFormat_311103010611f7c6c7f1926_23966992')) {
+function smarty_template_function_datePickerDateFormat_311103010611f7c6c7f1926_23966992(Smarty_Internal_Template $_smarty_tpl,$params) {
 foreach ($params as $key => $value) {
 $_smarty_tpl->tpl_vars[$key] = new Smarty_Variable($value, $_smarty_tpl->isRenderingCache);
 }
@@ -128,5 +128,5 @@ new Date(<?php echo $_smarty_tpl->tpl_vars['date']->value->Year();?>
 )
 <?php
 }}
-/*/ smarty_template_function_datePickerDateFormat_688501010611f7b4d32d4b4_96291816 */
+/*/ smarty_template_function_datePickerDateFormat_311103010611f7c6c7f1926_23966992 */
 }

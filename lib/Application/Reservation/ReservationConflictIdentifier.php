@@ -137,7 +137,7 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 		error_reporting(E_ERROR);
 		#var_dump("IsInConflict");
 		
-	    $link = mysqli_connect('172.19.0.2', $user='root', $password='Hi');
+	    $link = mysqli_connect('172.20.0.2', $user='root', $password='Hi');
 	
 		#$instance = ["id"=>1,"start_date"=>'2021-08-06 12:00:00',"end_date"=> '2021-08-06 12:40:01',"ref"=> '610c5dd321baa684688475',"series_id"=>1,"CPU"=>4,"spin"=>50,"HDD"=>200,"RAM"=>1000];
 		$relevant = ["CPU"=>0,"RAM"=>0,"HDD"=>0];
@@ -211,21 +211,21 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 		|| (($start_item >= $start && ($start_item < $end_instance))   || (($end_item >= $start) && ($end_item < $end_instance )))) {
 	
 
-			var_dump($end_instance);
-			var_dump($end);
+			#var_dump($end_instance);
+			#var_dump($end);
 
-			var_dump($item['start_date']);
-			var_dump($item['end_date']);
+			#var_dump($item['start_date']);
+			#var_dump($item['end_date']);
 
 
-			var_dump(strtotime($start) >= strtotime($item['start_date']));
-			var_dump(strtotime($start) < $end_item);
-			var_dump($end_instance  >= strtotime($item['start_date']) && ($end_instance  < $end_item ));
-			var_dump(((strtotime($item['start_date']) >= strtotime($start) && (strtotime($item['start_date']) < $end_instance))));
-			var_dump((($end_item >= strtotime($start)) && ($end_item < $end_instance )));
+			#var_dump(strtotime($start) >= strtotime($item['start_date']));
+			#var_dump(strtotime($start) < $end_item);
+			#var_dump($end_instance  >= strtotime($item['start_date']) && ($end_instance  < $end_item ));
+			#var_dump(((strtotime($item['start_date']) >= strtotime($start) && (strtotime($item['start_date']) < $end_instance))));
+			#var_dump((($end_item >= strtotime($start)) && ($end_item < $end_instance )));
 
-			var_dump($item['start_date']);
-			var_dump($item['end_date']);
+			#var_dump($item['start_date']);
+			#var_dump($item['end_date']);
 	
 			$series_id = $item['series_id'];
 			
@@ -259,7 +259,7 @@ class ReservationConflictIdentifier implements IReservationConflictIdentifier
 			}
 		}
 	
-		var_dump($relevant);
+		#var_dump($relevant);
 		#var_dump($instance_rows);
 		#var_dump($server_resources);
 		#var_dump(debug_backtrace());
